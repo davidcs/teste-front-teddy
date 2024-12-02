@@ -1,50 +1,30 @@
 # React + TypeScript + Vite
+# Projeto Vite + React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto simples utilizando Vite e React para construir uma aplicação web moderna e de alta performance. Abaixo estão as instruções para rodar o projeto em seu ambiente local.
 
-Currently, two official plugins are available:
+## Pré-requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Antes de começar, você precisará ter o seguinte instalado em sua máquina:
 
-## Expanding the ESLint configuration
+- [Node.js](https://nodejs.org/) (versão 16 ou superior)
+- [npm](https://www.npmjs.com/) (gerenciador de pacotes)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Passos para executar o projeto
 
-- Configure the top-level `parserOptions` property like this:
+### 1. Clonar o repositório
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Primeiro, clone o repositório para sua máquina local:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+```bash
+git clone https://github.com/davidcs/teste-front-teddy
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+cd projeto-vite-react
+npm install
+
+
+npm run dev
+
+
+http://localhost:5173/
