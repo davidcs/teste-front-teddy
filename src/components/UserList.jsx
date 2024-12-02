@@ -156,7 +156,6 @@ const UserList = () => {
   const handleLogout = () => {
     // Limpar sessão (por exemplo, removendo dados do localStorage ou cookies)
     localStorage.removeItem("username"); // Exemplo de remoção de um item de sessão
-    // Redirecionar para a tela de login
     navigate("/");
   };
 
